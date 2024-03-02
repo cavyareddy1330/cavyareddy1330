@@ -1,0 +1,150 @@
+<html> 
+<head> 
+<title>frames</title> 
+</head> 
+<frameset rows="20%,70%,10%"> 
+<frame name="A" src="A.html" > 
+<frameset cols="25%,75%"> 
+<frame name="B" src="B.html"> 
+<frame name="C" src="https://vignan.ac.in/"> 
+</frameset> 
+<frame name="D" src="D.html"> 
+</frameset> 
+</html> 
+A.html 
+<html> 
+<body> 
+<img src="WhatsApp Image 2020-10-07 at 15.38.05.jpeg" style="margin
+left:40%"/> 
+</body> 
+</html> 
+B.html 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Button shake effect</title> 
+    <link rel="stylesheet" href="style1.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" 
+rel="stylesheet">  
+</head> 
+<body> 
+  <div class="container"> 
+   <div class="navigation"> 
+    <ul> 
+     <li class="nav_item"><a href="https://vignan.ac.in/" 
+target="C">home</a></li> 
+     <li class="nav_item"><a 
+href="https://vignan.ac.in/csehome.php" target="C" >Branch</a></li> 
+     <li class="nav_item"><a 
+href="https://vignan.ac.in/vision.php" target="C">Vision</a></li> 
+                                <li class="nav_item"><a href="about.html" 
+target="C">about</a></li> 
+    </ul> 
+   </div> 
+  </div> 
+</body> 
+</html> 
+D.html 
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>Profile Card</title> 
+      <link rel="stylesheet" type="text/css" href="style.css"> 
+   </head> 
+   <body> 
+      <div class="card-container"> 
+         <div class="upper-container"> 
+            <div class="image-container"> 
+               <img src="DSC_0142.jpg" /> 
+            </div> 
+         </div> 
+         <div class="lower-container"> 
+            <div> 
+               <h3>Nikihl Teja</h3> 
+               <h4>Front-end Developer</h4> 
+            </div> 
+            <div> 
+               <p> Student in Vignan University 
+               </p> 
+            </div> 
+         </div> 
+      </div> 
+   </body> 
+</html> 
+Style.css 
+body{ 
+margin: 0px; 
+padding: 0px; 
+background: #f1f1f1; 
+font-family: arial; 
+box-sizing: border-box; 
+} 
+.card-container{ 
+width: 300px; 
+height: 430px; 
+background: #FFF; 
+border-radius: 6px; 
+position: absolute; 
+top: 50%; 
+left: 50%; 
+transform: translate(-50%,-50%); 
+box-shadow: 0px 1px 10px 1px #000; 
+overflow: hidden; 
+display: inline-block; 
+} 
+.upper-container{ 
+height: 150px; 
+background: #7F00FF; 
+} 
+.image-container{ 
+background: white; 
+width: 80px; 
+height: 80px; 
+border-radius: 50%; 
+padding: 5px; 
+transform: translate(100px,100px); 
+} 
+.image-container img{ 
+width: 80px; 
+height: 80px; 
+border-radius: 50%; 
+} 
+.lower-container{ 
+height: 280px; 
+background: #FFF; 
+padding: 20px; 
+padding-top: 40px; 
+text-align: center; 
+} 
+.lower-container h3, h4{ 
+box-sizing: border-box; 
+line-height: .6; 
+font-weight: lighter; 
+} 
+.lower-container h4{ 
+color: #7F00FF; 
+opacity: .6; 
+font-weight: bold; 
+} 
+.lower-container p{ 
+font-size: 16px; 
+color: gray; 
+margin-bottom: 30px; 
+} 
+.lower-container .btn{ 
+padding: 12px 20px; 
+background: #7F00FF; 
+border: none; 
+color: white; 
+border-radius: 30px; 
+font-size: 12px; 
+text-decoration: none; 
+font-weight: bold; 
+transition: all .3s ease-in; 
+} 
+.lower-container .btn:hover{ 
+background: transparent; 
+color: #7F00FF; 
+border: 2px solid #7F00FF; 
+} 

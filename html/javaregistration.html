@@ -1,0 +1,112 @@
+<html> 
+<head> 
+<title>HTML Table</title> 
+<script> 
+function validate(){ 
+var name=document.myform.fn.value; 
+var password=document.myform.pass.value; 
+if(name==null||name==" ") 
+{ 
+alert("Name Cannot be Blank"); 
+return false; 
+} 
+else if(!isNaN(name)) 
+{ 
+alert("Please Enter only Characters"); 
+return false; 
+} 
+else if((name.length<5)||(name.length>15)) 
+{ 
+alert("Your character must be 5 to 15 characters"); 
+return false; 
+} 
+else if(password.length<6) 
+{ 
+alert("Password must be atleast 6 characters long"); 
+return false; 
+} 
+else if(!(/^\d{10}$/).test(document.myform.phno.value)) 
+{ 
+alert("You have Entered Invalid Phone Number"); 
+return false; 
+} 
+else if(!(/^\w+([\-]?\w+)*@\w+([\-]?\w+)*(\.\w{2,3}+$/).test(document.myform.email.value)) 
+{ 
+alert("You have Entered Invalid Email address!"); 
+return false; 
+} 
+} 
+</script> 
+</head> 
+<body> 
+<form method="get" action="#" name="myform" onSubmit="validate()"> 
+<table border="1" align="center" width="400" bgcolor="lightblue" > 
+<caption>Registration Form</caption> 
+<tr> 
+<th>First name</th> 
+<td><input type="text" name="fn" id="fn1" maxlength="10" title="enter your first name" 
+placeholder="enter your first name" required/></td> 
+</tr> 
+<tr> 
+<th>Last name</th> 
+<td><input type="text"/></td> 
+</tr> 
+<tr> 
+<th>Enter your password</th> 
+<td><input type="password" name="pass"/></td> 
+</tr> 
+<input type="hidden" id="hari"> 
+<tr> 
+<th>Enter your email</th> 
+<td><input type="email" name="email"/></td> 
+</tr> 
+<tr> 
+<th>Enter your mobile</th> 
+<td><input type="number" name="phno"/></td> 
+</tr> 
+<tr> 
+<th>Enter your address</th> 
+<td><textarea rows="8" cols="20"></textarea></td> 
+</tr> 
+<tr> 
+<th>Select your gender</th> 
+<td> 
+<input type="radio" name="g" value="m"/>Male 
+<input type="radio" name="g" value="f"/>Female 
+</td> 
+</tr> 
+<tr> 
+<th>Select your hobbies</th> 
+<td> 
+<input type="checkbox" name="x" value="h"/>Watching Movies<br> 
+<input type="checkbox" name="x" value="h2"/>Playing Games<br> 
+<input type="checkbox" name="x" value="h3"/>Reading Books<br> 
+</td> 
+</tr> 
+<tr> 
+<th>Select your DOB</th> 
+<td><input type="date"/></td> 
+</tr> 
+<tr> 
+<th>Select your Country</th> 
+<td> 
+<select name="country"> 
+<option value="" selected="selected" disabled="disabled">Select your country</option> 
+<option value="1">India</option> 
+<option value="2">America</option> 
+</select> 
+</td> 
+</tr> 
+<tr> 
+<th>Upload your File</th> 
+<td><input type="file"/></td> 
+</tr> 
+<tr> 
+<td colspan="2" align="center"><input type="submit" value="Submit"/> 
+<input type="reset" value="Reset"/> 
+</td> 
+</tr> 
+</table> 
+</form> 
+</body> 
+</html>
